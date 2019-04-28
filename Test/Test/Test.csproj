@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ACCEC3C7-545A-4782-BB2F-7715B7D6FFCF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Test</RootNamespace>
+    <AssemblyName>Test</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BlackjackForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlackjackForm.Designer.cs">
+      <DependentUpon>BlackjackForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Card.cs" />
+    <Compile Include="CardGroup.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\CardResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CardResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BlackjackForm.resx">
+      <DependentUpon>BlackjackForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\CardResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CardResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TestForm.dje.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\cards\Back.gif" />
+    <Content Include="Properties\cards\C10.gif" />
+    <Content Include="Properties\cards\C2.gif" />
+    <Content Include="Properties\cards\C3.gif" />
+    <Content Include="Properties\cards\C4.gif" />
+    <Content Include="Properties\cards\C5.gif" />
+    <Content Include="Properties\cards\C6.gif" />
+    <Content Include="Properties\cards\C7.gif" />
+    <Content Include="Properties\cards\C8.gif" />
+    <Content Include="Properties\cards\C9.gif" />
+    <Content Include="Properties\cards\CA.gif" />
+    <Content Include="Properties\cards\CJ.gif" />
+    <Content Include="Properties\cards\CK.gif" />
+    <Content Include="Properties\cards\CQ.gif" />
+    <Content Include="Properties\cards\D10.gif" />
+    <Content Include="Properties\cards\D2.gif" />
+    <Content Include="Properties\cards\D3.gif" />
+    <Content Include="Properties\cards\D4.gif" />
+    <Content Include="Properties\cards\D5.gif" />
+    <Content Include="Properties\cards\D6.gif" />
+    <Content Include="Properties\cards\D7.gif" />
+    <Content Include="Properties\cards\D8.gif" />
+    <Content Include="Properties\cards\D9.gif" />
+    <Content Include="Properties\cards\DA.gif" />
+    <Content Include="Properties\cards\DJ.gif" />
+    <Content Include="Properties\cards\DK.gif" />
+    <Content Include="Properties\cards\DQ.gif" />
+    <Content Include="Properties\cards\H10.gif" />
+    <Content Include="Properties\cards\H2.gif" />
+    <Content Include="Properties\cards\H3.gif" />
+    <Content Include="Properties\cards\H4.gif" />
+    <Content Include="Properties\cards\H5.gif" />
+    <Content Include="Properties\cards\H6.gif" />
+    <Content Include="Properties\cards\H7.gif" />
+    <Content Include="Properties\cards\H8.gif" />
+    <Content Include="Properties\cards\H9.gif" />
+    <Content Include="Properties\cards\HA.gif" />
+    <Content Include="Properties\cards\HJ.gif" />
+    <Content Include="Properties\cards\HK.gif" />
+    <Content Include="Properties\cards\HQ.gif" />
+    <Content Include="Properties\cards\S10.gif" />
+    <Content Include="Properties\cards\S2.gif" />
+    <Content Include="Properties\cards\S3.gif" />
+    <Content Include="Properties\cards\S4.gif" />
+    <Content Include="Properties\cards\S5.gif" />
+    <Content Include="Properties\cards\S6.gif" />
+    <Content Include="Properties\cards\S7.gif" />
+    <Content Include="Properties\cards\S8.gif" />
+    <Content Include="Properties\cards\S9.gif" />
+    <Content Include="Properties\cards\SA.gif" />
+    <Content Include="Properties\cards\SJ.gif" />
+    <Content Include="Properties\cards\SK.gif" />
+    <Content Include="Properties\cards\SQ.gif" />
+    <None Include="Resources\S6.gif" />
+    <None Include="Resources\S5.gif" />
+    <None Include="Resources\S4.gif" />
+    <None Include="Resources\S3.gif" />
+    <None Include="Resources\S2.gif" />
+    <None Include="Resources\HQ.gif" />
+    <None Include="Resources\HK.gif" />
+    <None Include="Resources\HJ.gif" />
+    <None Include="Resources\HA.gif" />
+    <None Include="Resources\H10.gif" />
+    <None Include="Resources\H9.gif" />
+    <None Include="Resources\H8.gif" />
+    <None Include="Resources\H7.gif" />
+    <None Include="Resources\H6.gif" />
+    <None Include="Resources\H5.gif" />
+    <None Include="Resources\H4.gif" />
+    <None Include="Resources\H3.gif" />
+    <None Include="Resources\H2.gif" />
+    <None Include="Resources\DQ.gif" />
+    <None Include="Resources\DK.gif" />
+    <None Include="Resources\DJ.gif" />
+    <None Include="Resources\DA.gif" />
+    <None Include="Resources\D10.gif" />
+    <None Include="Resources\D9.gif" />
+    <None Include="Resources\D8.gif" />
+    <None Include="Resources\D7.gif" />
+    <None Include="Resources\D6.gif" />
+    <None Include="Resources\D5.gif" />
+    <None Include="Resources\D4.gif" />
+    <None Include="Resources\D3.gif" />
+    <None Include="Resources\D2.gif" />
+    <None Include="Resources\CQ.gif" />
+    <None Include="Resources\CK.gif" />
+    <None Include="Resources\CJ.gif" />
+    <None Include="Resources\CA.gif" />
+    <None Include="Resources\C10.gif" />
+    <None Include="Resources\C9.gif" />
+    <None Include="Resources\C8.gif" />
+    <None Include="Resources\C7.gif" />
+    <None Include="Resources\C6.gif" />
+    <None Include="Resources\SQ.gif" />
+    <None Include="Resources\SK.gif" />
+    <None Include="Resources\SJ.gif" />
+    <None Include="Resources\SA.gif" />
+    <None Include="Resources\S10.gif" />
+    <None Include="Resources\S9.gif" />
+    <None Include="Resources\S8.gif" />
+    <None Include="Resources\S7.gif" />
+    <None Include="Resources\C5.gif" />
+    <None Include="Resources\C4.gif" />
+    <None Include="Resources\C3.gif" />
+    <None Include="Resources\C2.gif" />
+    <None Include="Resources\Back.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
